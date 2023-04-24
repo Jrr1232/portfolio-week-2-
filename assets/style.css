@@ -1,0 +1,416 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navbar */
+.navbar {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+
+
+
+}
+
+.navbar h1 {
+    font-size: 30px;
+    margin-left: 20px;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 20px;
+    font-size: smaller;
+    list-style: none;
+    margin-top: 40px;
+
+
+
+
+
+
+
+}
+
+.navbar li {
+    margin-right: 30px;
+
+
+
+
+
+
+
+
+
+}
+
+.navbar li a {
+    color: aqua;
+    text-decoration: none;
+    border-bottom: 2px solid aqua;
+
+
+
+}
+
+/* Hero image */
+header img {
+    position: relative;
+    object-fit: cover;
+
+
+
+}
+
+
+
+header h3 {
+
+    position: absolute;
+    margin-right: 20px;
+    right: 5px;
+    bottom: 350px;
+    z-index: 1;
+    font-size: 30px;
+    background-color: gainsboro;
+    width: fit-content;
+
+
+}
+
+/* Sidebar section */
+
+
+.content .sidebar2 {
+    height: 800px;
+}
+
+.content h1 {
+    padding-bottom: 100px;
+    padding-right: 2px;
+    text-align: right;
+    border-right: 3px solid aqua;
+}
+
+/* Main Content Section set to Flex   */
+.content {
+    display: flex;
+    flex: 1 1 0;
+}
+
+/* Intro Paragraph */
+.content p {
+    padding-left: 30px;
+}
+
+/* Project thumbnails */
+
+.content .work-cards {
+    padding-top: 30px
+}
+
+
+
+.content .work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2px;
+    padding-left: 30px;
+
+
+
+}
+
+.content .work-cards #img1 {
+    object-fit: cover;
+    border: 4px solid rgba(0, 255, 255, 0.318);
+    height: 470px;
+    width: 850px;
+    transition: 0.4s all ease-in-out;
+
+}
+
+.content .work-cards .img2 {
+    object-fit: cover;
+
+    border: 4px solid rgba(0, 255, 255, 0.318);
+    width: 300px;
+    height: 100px;
+
+
+}
+
+/* creating project title div inside thumbnail */
+
+.content .work .work-cards .job {
+    position: relative;
+    background-color: gainsboro;
+    width: fit-content;
+    bottom: 120px;
+    left: 4px;
+
+}
+
+.content .work .work-cards .job2 {
+    position: relative;
+    background-color: gainsboro;
+    font-size: 10px;
+    width: fit-content;
+    bottom: 80px;
+    left: 4px;
+
+}
+
+
+
+.content .work .work-cards .job h2,
+h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Setting links to bold when hovering  */
+
+.navbar ul li:hover {
+    font-weight: bold;
+
+
+
+
+
+
+
+}
+
+
+/* Setting thumbnails to tranparent when hovering */
+
+.content .work-cards img:hover {
+
+    opacity: 70%;
+
+}
+
+.content .work-cards img:hover~.job {
+    display: none;
+
+}
+
+.content .work-cards img:hover~.job2 {
+    display: none;
+
+}
+
+
+
+/* Footer Section */
+.footer {
+    position: relative;
+    bottom: 200px;
+}
+
+.footer .footercontainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 250px;
+
+
+
+
+
+}
+
+.footercontainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+
+
+}
+
+.footercontainer li {
+    padding-left: 15px;
+    font-family: sans-serif;
+    color: rgb(33, 33, 80);
+    opacity: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footercontainer li a {
+    color: rgb(33, 33, 80);
+    text-decoration: none;
+}
+
+.footercontainer li i {
+    margin-right: 10px;
+}
+
+/* Media Querries */
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: 200px;
+        display: block;
+        background-color: antiquewhite;
+
+    }
+
+    .navbar h1 {
+        height: 10px;
+    }
+
+    .navbar ul {
+        display: block;
+        padding-left: 0px;
+
+
+    }
+
+
+
+    .navbar li a {
+        width: 100%;
+        background-color: antiquewhite;
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-size: 20px;
+    }
+
+    header img {
+        height: 200px;
+    }
+
+    .content {
+        margin-left: 25px;
+    }
+
+    .content .info {
+        display: none;
+    }
+
+    .footer {
+        position: relative;
+
+        top: 75px;
+        left: 2px;
+        margin-right: 40px;
+    }
+
+    .footer .footercontainer {
+        display: inline;
+        padding-left: 2px;
+        margin-left: 20px;
+
+    }
+
+    .footercontainer li {
+        font-size: 15pxx;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        font-size: 10px;
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        display: flex;
+        margin-top: 8px;
+
+    }
+
+    p {
+        font-size: 10px;
+        width: 200px;
+        line-height: 20px;
+
+    }
+
+    .content .sidebar2 {
+        height: 1000px;
+    }
+
+    .content .work-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 30px;
+
+
+
+    }
+
+
+    .content .work-cards #img1 {
+        object-fit: cover;
+        border: 4px solid rgba(0, 255, 255, 0.318);
+        height: 200px;
+        width: 230px;
+
+    }
+
+    .content .work-cards .img2 {
+        object-fit: cover;
+
+        border: 4px solid rgba(0, 255, 255, 0.318);
+        height: 200px;
+        width: 230px;
+
+
+
+    }
+
+    .content .work .work-cards .job {
+        display: none;
+
+    }
+
+    .content .work .work-cards .job2 {
+        display: none;
+
+    }
+
+
+    .footer {
+        display: inline;
+        position: relative;
+        bottom: 150px;
+        right: 100px;
+
+    }
+
+    .footercontainer ul {
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1200px) {}
