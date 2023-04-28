@@ -203,6 +203,7 @@ h3 {
 .content .work-cards img:hover {
 
     opacity: 70%;
+    transform: scale(1.5);
 
 }
 
