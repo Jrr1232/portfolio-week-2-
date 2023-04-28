@@ -16,6 +16,13 @@ body {
 
 }
 
+.navbar img {
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
 .navbar h1 {
     font-size: 30px;
     margin-left: 20px;
@@ -258,11 +265,16 @@ h3 {
 
 /* Media Querries */
 @media screen and (max-width: 480px) {
+
     .navbar {
         height: 200px;
         display: block;
         background-color: antiquewhite;
 
+    }
+
+    .navbar img {
+        display: none;
     }
 
     .navbar h1 {
@@ -292,7 +304,7 @@ h3 {
     }
 
     .content {
-        margin-left: 25px;
+        margin-left: 45px;
     }
 
     .content .info {
@@ -331,6 +343,10 @@ h3 {
         font-size: 10px;
         list-style: none;
         margin-top: 10px;
+    }
+
+    .navbar img {
+        display: none;
     }
 
     .navbar li {
