@@ -8,7 +8,7 @@
 
 ## 🤔 Introduction
 
-### WELCOME... This is my portfolio page that will show you guys some of my favorite projects I built. Please have look ! 
+### WELCOME... This is my portfolio page that will show you guys some of my favorite projects I've built. Please have look !. 
 
 
 
